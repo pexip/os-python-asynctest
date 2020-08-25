@@ -1,0 +1,16 @@
+Description: Skip unreliable test
+Bug: https://github.com/Martiusweb/asynctest/issues/112
+Author: Jonas Smedegaard <dr@jones.dk>
+Last-Update: 2019-11-29
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/test/test_selector.py
++++ b/test/test_selector.py
+@@ -286,6 +286,7 @@
+ 
+         TestCase().debug()
+ 
++    @unittest.skip('unreliable')
+     def test_events_watched_outside_test_are_ignored(self):
+         loop = asyncio.new_event_loop()
+         asyncio.set_event_loop(loop)

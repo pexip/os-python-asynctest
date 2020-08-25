@@ -1,0 +1,36 @@
+python-asynctest (0.13.0-5) unstable; urgency=medium
+
+  * use debhelper compatibility level 13 (not 10);
+    build-depend on debhelper-compat (not debhelper)
+  * declare buildsystem explicitly (not in environment)
+  * declare compliance with Debian Policy 4.5.0
+  * copyright: update coverage
+  * simplify source script copyright-chceck
+  * orphan package
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 25 Aug 2020 19:16:35 +0200
+
+python-asynctest (0.13.0-4) unstable; urgency=medium
+
+  * fix patch 2001 to skip the failing test
+
+ -- Jonas Smedegaard <dr@jones.dk>  Mon, 02 Dec 2019 17:26:29 +0100
+
+python-asynctest (0.13.0-3) unstable; urgency=medium
+
+  * add patch 2001 to skip unreliable test
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 30 Nov 2019 14:08:24 +0100
+
+python-asynctest (0.13.0-2) unstable; urgency=medium
+
+  * fix use package section doc
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 30 Nov 2019 13:10:56 +0100
+
+python-asynctest (0.13.0-1) experimental; urgency=low
+
+  * Initial packaging release.
+    Closes: bug#945779.
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 28 Nov 2019 15:43:18 +0100

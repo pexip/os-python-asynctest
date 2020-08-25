@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+STEM = asynctest
+DOCDIR = debian/python3-$(STEM)-doc/usr/share/doc/python3-$(STEM)-doc/html
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	python3 -m unittest --verbose test
+endif
+
+execute_before_dh_sphinxdoc:
+ifeq (,$(filter nodoc,$(DEB_BUILD_OPTIONS)))
+	sphinx-build -b html doc $(DOCDIR)
+endif
+
+%:
+	dh $@ --with python3,sphinxdoc --buildsystem=pybuild
