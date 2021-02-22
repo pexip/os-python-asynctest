@@ -1,0 +1,8 @@
+*.py[oc]
+__pycache__
+build
+asynctest.egg-info
+dist
+doc/_build
+virtualenv/
+venv*/
