@@ -1,3 +1,9 @@
+python-asynctest (0.13.0-5pexip2) pexip-bullseye; urgency=medium
+
+  * Rebuild for bullseye.
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 30 Jun 2022 11:44:27 +0100
+
 python-asynctest (0.13.0-5pexip1) pexip; urgency=medium
 
   * Prepare Pexip packaging
